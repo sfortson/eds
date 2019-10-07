@@ -28,7 +28,7 @@ class App extends Component<> {
         <Row>
           <Col>
             <div className="text-center">
-              <Image src={EDSLogo} />
+              <Image src={EDSLogo} fluid />
               <div style={{ visibility: 'hidden' }}>
                 <PaypalButton
                   client={CLIENT}
