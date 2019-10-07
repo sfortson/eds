@@ -2,8 +2,10 @@ import React, { Component } from 'react'
 import Container from 'react-bootstrap/Container'
 import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
+import Image from 'react-bootstrap/Image'
 
 import PaypalButton from './PaypalButton'
+import EDSLogo from './static/eds_logo.png'
 
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css'
@@ -24,21 +26,21 @@ class App extends Component<> {
     return (
       <Container>
         <Row>
-          <Col
-            lg={9}
-            className="justify-content-lg-center"
-            style={{ paddingTop: '72px' }}>
-            <div>
-              <PaypalButton
-                client={CLIENT}
-                env={ENV}
-                commit={true}
-                currency={'USD'}
-                total={150}
-                onSuccess={onSuccess}
-                onError={onError}
-                onCancel={onCancel}
-              />
+          <Col>
+            <div className="text-center">
+              <Image src={EDSLogo} />
+              <div style={{ visibility: 'hidden' }}>
+                <PaypalButton
+                  client={CLIENT}
+                  env={ENV}
+                  commit={true}
+                  currency={'USD'}
+                  total={150}
+                  onSuccess={onSuccess}
+                  onError={onError}
+                  onCancel={onCancel}
+                />
+              </div>
             </div>
           </Col>
         </Row>
