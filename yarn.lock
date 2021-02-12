@@ -6183,12 +6183,16 @@ __metadata:
     eslint-plugin-babel: ^5.3.1
     eslint-plugin-prettier: 3.3.1
     gh-pages: 3.1.0
+    jquery: ^3.5.1
     prettier: 2.2.1
     react: 17.0.1
     react-bootstrap: 1.4.3
     react-dom: 17.0.1
     react-scripts: 4.0.2
     typescript: ^4.1.5
+  peerDependencies:
+    jquery: "*"
+    popper.js: "*"
   languageName: unknown
   linkType: soft
 
@@ -9737,6 +9741,13 @@ fsevents@^1.2.7:
   bin:
     jest: bin/jest.js
   checksum: 5db020fa88bc87ff4c8373be02605a3a42256b59151b30b22955dfa92142516150abf0e969fe8847bdf2bf0fbb338a1c93954b808fc8d7b0933f4bb15f1e0500
+  languageName: node
+  linkType: hard
+
+"jquery@npm:^3.5.1":
+  version: 3.5.1
+  resolution: "jquery@npm:3.5.1"
+  checksum: c50818c84837902a60938c85786feb612f346a9918f7285409d605449460790b3815ad8aaf5806f19e89f1a79b27d327802b421ab354fe213f3fd1801e3562e6
   languageName: node
   linkType: hard
 

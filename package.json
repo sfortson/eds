@@ -17,8 +17,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "predeploy": "yarn build",
-    "deploy": "gh-pages -d build",
+    "deploy": "yarn build && gh-pages -d build",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -40,6 +39,11 @@
     "eslint-config-prettier": "7.2.0",
     "eslint-plugin-babel": "^5.3.1",
     "eslint-plugin-prettier": "3.3.1",
+    "jquery": "^3.5.1",
     "prettier": "2.2.1"
+  },
+  "peerDependencies": {
+    "jquery": "*",
+    "popper.js": "*"
   }
 }
